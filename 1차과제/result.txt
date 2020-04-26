@@ -1,0 +1,45 @@
+terminal message
+---------------------------
+
+Push: 1
+Push: 2
+Push: 3
+pop: 3
+pop: 2
+pop: 1
+
+
+
+
+kernel message
+----------------------------
+
+
+[ 5814.146949] [System call] oslab_push(): Push
+[ 5814.146951] Stack Top-------------
+[ 5814.146953] 1
+[ 5814.146954] Stack Bottom----------
+[ 5814.147124] [System call] oslab_push(): Push
+[ 5814.147125] Stack Top-------------
+[ 5814.147126] 2
+[ 5814.147127] 1
+[ 5814.147128] Stack Bottom----------
+[ 5814.147132] [System call] oslab_push(): Push
+[ 5814.147133] Stack Top-------------
+[ 5814.147134] 3
+[ 5814.147135] 2
+[ 5814.147135] 1
+[ 5814.147136] Stack Bottom----------
+[ 5814.147139] [System call] oslab_pop(): Pop
+[ 5814.147140] Stack Top-------------
+[ 5814.147141] 2
+[ 5814.147141] 1
+[ 5814.147142] Stack Bottom----------
+[ 5814.147145] [System call] oslab_pop(): Pop
+[ 5814.147146] Stack Top-------------
+[ 5814.147147] 1
+[ 5814.147148] Stack Bottom----------
+[ 5814.147151] [System call] oslab_pop(): Pop
+[ 5814.147151] Stack Top-------------
+[ 5814.147152] Stack Bottom----------
+
